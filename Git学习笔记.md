@@ -1,0 +1,31 @@
+## Git 学习笔记
+
+#### 本地仓库操作
+
+
+
+#### 远程仓库协作
+
+1.创建 SSH Key（将地址换为自己的邮箱地址一路回车）
+
+```Git
+$ ssh-keygen -t rsa -C "youremail@gmail.com"
+```
+
+2.GitHub中或者Gitlab中添加个人公钥（user/.ssh/.pub）
+
+3.线上仓库与本地库关联（origin为为远程库的命名，michaelliao替换为线上平台账户名，projectname替换线上项目名）
+
+```Git
+$ git remote add origin git@github.com:michaelliao/projectname.git
+```
+
+> ps：如提示 `fatal: remote origin already exists.`,可 `$ git remote rm origin` 后再次关联。
+
+4.本地内容推送远程库
+
+```Git
+$ git push -u origin master
+```
+
+意为推送到origin的master分支
