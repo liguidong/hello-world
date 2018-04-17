@@ -2,6 +2,25 @@
 
 #### 本地仓库操作
 
+创建并切换分支,-b（例命名为dev）
+
+```git
+git checkout -b dev
+/*
+其等同于
+git branch dev
+git checkout dev
+*/
+```
+
+查看当前分支
+
+```git
+git branch
+```
+
+
+
 
 
 #### 远程仓库协作
