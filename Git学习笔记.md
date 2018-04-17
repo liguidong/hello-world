@@ -19,6 +19,18 @@ git checkout dev
 git branch
 ```
 
+合并分支（合并dev到当前分支）
+
+```git
+git merge dev
+```
+
+删除分支
+
+```
+git branch -d dev
+```
+
 
 
 
