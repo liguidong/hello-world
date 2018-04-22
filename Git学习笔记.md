@@ -31,6 +31,14 @@ git merge dev
 git branch -d dev
 ```
 
+查看远程仓库地址
+
+```git
+git remote -v
+```
+
+
+
 
 
 
@@ -52,6 +60,10 @@ $ git remote add origin git@github.com:michaelliao/projectname.git
 ```
 
 > ps：如提示 `fatal: remote origin already exists.`,可 `$ git remote rm origin` 后再次关联。
+>
+> 如提示`fatal: refusing to merge unrelated histories`，需git pull之后再push，
+>
+> `git pull origin master --allow-unrelated-histories`
 
 4.本地内容推送远程库
 
