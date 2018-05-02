@@ -24,19 +24,19 @@ xdebug.idekey="PHPSTORM"
 
 File → Default Setting → Languages & Frameworks → PHP
 
-![1525270877480](C:\Users\ligui\AppData\Local\Temp\1525270877480.png)
+![1525270877480](https://wt-box.worktile.com/public/467eee3c-2b08-405b-b202-589f846d7862)
 
-![1525270922295](C:\Users\ligui\AppData\Local\Temp\1525270922295.png)
+![1525270922295](https://wt-box.worktile.com/public/467eee3c-2b08-405b-b202-589f846d7862)
 
 
 
 Debug
 
-![1525270953215](C:\Users\ligui\AppData\Local\Temp\1525270953215.png)
+![1525270953215](https://wt-box.worktile.com/public/4e5fecef-72ca-4fa1-9e0c-9475095148ba)
 
 DBGp Proxy
 
-![1525271000598](C:\Users\ligui\AppData\Local\Temp\1525271000598.png)
+![1525271000598](https://wt-box.worktile.com/public/86162480-fd6f-4355-a1ce-f1228efa0949)
 
 ### 使用
 
@@ -45,6 +45,10 @@ DBGp Proxy
 ![image.png](https://wt-box.worktile.com/public/b24d9a93-fd87-4c2f-b8a0-e8ed032df6c9)
 
 2.启用插件，启用phpstorm的监听（电话图标）
+
+chrome中右击Xdebug helper图标，选项，进行配置
+
+phpstorm开启监听
 
 ![image.png](https://wt-box.worktile.com/public/fd519e8c-2744-470e-9111-0397460f113d)
 
