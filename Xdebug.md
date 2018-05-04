@@ -48,8 +48,11 @@ DBGp Proxy
 
 chrome中右击Xdebug helper图标，选项，进行配置
 
+开启插件的监听，点击debug，等其变成原谅色
+
 phpstorm开启监听
 
 ![image.png](https://wt-box.worktile.com/public/fd519e8c-2744-470e-9111-0397460f113d)
 
 3.打断点，浏览器中访问，即可看到效果，F9下一步
+
