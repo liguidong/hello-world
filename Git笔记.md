@@ -37,9 +37,13 @@ git branch -d dev
 git remote -v
 ```
 
+撤销修改(回到暂存区的状态)
+
+```git
+git checkout -- readme.txt
+```
 
 
-这里是来自master 的提交
 
 
 
