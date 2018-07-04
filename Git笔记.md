@@ -57,6 +57,8 @@ $ ssh-keygen -t rsa -C "youremail@gmail.com"
 
 2.GitHub中或者Gitlab中添加个人公钥（user/.ssh/.pub）
 
+> clone -b branchName url 可克隆对应分支
+
 3.线上仓库与本地库关联（origin为为远程库的命名，michaelliao替换为线上平台账户名，projectname替换线上项目名）
 
 ```Git
