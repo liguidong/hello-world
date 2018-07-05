@@ -49,6 +49,8 @@ $ ssh-keygen -t rsa -C "youremail@gmail.com"
 
 2.GitHub中或者Gitlab中添加个人公钥（user/.ssh/.pub）
 
+> clone 线上库master后，可先`git branch -a`查看线上分支，`git checkout -b dev origin/dev`来新建并关联线上分支
+
 3.线上仓库与本地库关联（origin为为远程库的命名，michaelliao替换为线上平台账户名，projectname替换线上项目名）
 
 ```Git
@@ -68,3 +70,16 @@ $ git push -u origin master
 ```
 
 意为推送到origin的master分支
+
+
+
+
+
+####解决冲突流程
+
+1. 首先，可以试图用`git push origin <branch-name>`推送自己的修改；
+2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并；
+3. 如果合并有冲突，则解决冲突，并在本地提交；
+4. 没有冲突或者解决掉冲突后，再用`git push origin <branch-name>`推送就能成功！
+
+如果`git pull`提示`no tracking information`，则说明本地分支和远程分支的链接关系没有创建，用命令`git branch --set-upstream-to <branch-name> origin/<branch-name>`。
