@@ -1,4 +1,4 @@
-## Git 学习笔记
+## Git 笔记
 
 #### 本地仓库操作
 
@@ -42,6 +42,24 @@ git remote -v
 ```git
 git checkout -- readme.txt
 ```
+
+
+
+#### 版本管理
+
+回到上一版本（上一commit） `git log 查看记录`
+
+```git
+git reset --hard HEAD^
+```
+
+回到指定版本 `git reflog`
+
+```git
+git reset --hard 12311
+```
+
+
 
 #### 远程仓库协作
 
