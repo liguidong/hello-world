@@ -1,5 +1,11 @@
 ### Xdebu安装使用过程——李不知
 
+> 2018年9月1日Update:增加虚拟机Xdebug的安装方式
+
+---
+
+#### 【Windows】
+
 #### 下载安装对应版本
 
 1.`http://www.xdebug.org/find-binary.php`复制phpinfo提交后得到对应版本下载地址
@@ -55,4 +61,16 @@ phpstorm开启监听
 ![image.png](https://wt-box.worktile.com/public/fd519e8c-2744-470e-9111-0397460f113d)
 
 3.打断点，浏览器中访问，即可看到效果，F9下一步
+
+
+
+---
+
+
+
+#### 虚拟机
+
+根据php版本去官网下载对应的包，例如我这边php 5.4
+
+Wget `<https://xdebug.org/files/xdebug-2.4.1.tgz>`
 

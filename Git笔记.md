@@ -81,7 +81,7 @@ $ git push -u origin master
 
 
 
-####解决冲突流程
+#### 解决冲突流程
 
 1. 首先，可以试图用`git push origin <branch-name>`推送自己的修改；
 2. 如果推送失败，则因为远程分支比你的本地更新，需要先用`git pull`试图合并；
