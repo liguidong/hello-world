@@ -2,6 +2,8 @@
 
 #### 本地仓库操作
 
+##### 分支 branch
+
 创建并切换分支,-b（例命名为dev）
 
 ```git
@@ -31,6 +33,14 @@ git merge dev
 git branch -d dev
 ```
 
+合并分支（合并dev到当前分支）
+
+```
+git merge dev
+```
+
+
+
 查看远程仓库地址
 
 ```git
@@ -41,6 +51,45 @@ git remote -v
 
 ```git
 git checkout -- readme.txt
+```
+
+
+
+##### tag
+
+创建
+
+```
+git tag <name>
+//带说明 -a 指定名字 -m 指定说明文字
+git tag -a v0.1 -m "version 0.1 released" 1094adb
+//如果要推送某个标签到远程，使用命令
+git push origin <tagname>
+//或者，一次性推送全部尚未推送到远程的本地标签：
+git push origin --tags
+```
+
+查看
+
+```
+git tag
+//查看tag说明
+git show <tagname>
+```
+
+对应commit 打tag
+
+```
+git tag v0.9 f52c633
+```
+
+删除tag
+
+```
+git tag -d v0.1
+//因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。
+//删除远程tag需先删除本地tag，再从远程删除。删除命令也是push
+git push origin :refs/tags/v0.9
 ```
 
 
@@ -57,6 +106,12 @@ git reset --hard HEAD^
 
 ```git
 git reset --hard 12311
+```
+
+log
+
+```
+git log --pretty=oneline --abbrev-commit
 ```
 
 
